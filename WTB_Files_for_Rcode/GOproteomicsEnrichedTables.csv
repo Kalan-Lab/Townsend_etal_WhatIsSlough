@@ -1,0 +1,155 @@
+﻿Goterm,ProcessFunctionComponent,Description,Classification,P-value,FDR q-value,Log_FDRqValue,Enrichment,TotalGenes,GenesInPathway,ReliventGenes,NumberOfGenes
+GO:0016192,Process,vesicle-mediated transport,Inter-cellular Transport,1.14E-18,7.73E-15,-14.11182051,1.46,872,241,477,192
+GO:0043062,Process,extracellular structure organization,Extracellular Matrix,4.71E-16,1.60E-12,-11.79588002,2.57,872,43,331,42
+GO:0031424,Process,keratinization,Skin Barrier Formation,1.42E-14,3.22E-11,-10.49214413,10.57,872,20,66,16
+GO:0070268,Process,cornification,Skin Barrier Formation,1.78E-14,3.03E-11,-10.51855737,9.77,872,23,66,17
+GO:0072376,Process,protein activation cascade,Blood Clotting,4.36E-14,5.93E-11,-10.22694531,3.31,872,32,247,30
+GO:1900046,Process,regulation of hemostasis,Blood Clotting,3.39E-12,3.84E-09,-8.415668776,4.4,872,23,181,21
+GO:0030193,Process,regulation of blood coagulation,Blood Clotting,3.39E-12,3.29E-09,-8.482804102,4.4,872,23,181,21
+GO:0050818,Process,regulation of coagulation,Blood Clotting,3.39E-12,2.88E-09,-8.540607512,4.4,872,23,181,21
+GO:0032501,Process,multicellular organismal process,Multicellular Organismal Process,5.01E-12,3.78E-09,-8.4225082,2.44,872,165,119,55
+GO:0032101,Process,regulation of response to external stimulus,Response to Stimulus,6.87E-12,4.66E-09,-8.331614083,2.33,872,92,224,55
+GO:0030198,Process,extracellular matrix organization,Extracellular Matrix,1.26E-11,7.77E-09,-8.109578981,2.55,872,32,331,31
+GO:0032940,Process,secretion by cell,Inter-cellular Transport,3.20E-11,1.81E-08,-7.742321425,1.4,872,194,477,149
+GO:0002376,Process,immune system process,Immune Function,4.69E-11,2.45E-08,-7.610833916,1.37,872,279,416,182
+GO:1903034,Process,regulation of response to wounding,Wound Healing,5.37E-11,2.61E-08,-7.583359493,2.36,872,30,370,30
+GO:0070613,Process,regulation of protein processing,Metabolic Process,1.11E-10,5.01E-08,-7.300162274,3.26,872,31,224,26
+GO:1903317,Process,regulation of protein maturation,Metabolic Process,1.11E-10,4.70E-08,-7.327902142,3.26,872,31,224,26
+GO:0046903,Process,secretion,Inter-cellular Transport,1.31E-10,5.25E-08,-7.279840697,1.39,872,199,477,151
+GO:0002920,Process,regulation of humoral immune response,Immune Function,1.87E-10,7.05E-08,-7.151810883,3.44,872,26,224,23
+GO:0061041,Process,regulation of wound healing,Wound Healing,2.09E-10,7.47E-08,-7.126679398,2.38,872,28,366,28
+GO:0006887,Process,exocytosis,Inter-cellular Transport,2.43E-10,8.24E-08,-7.084072788,1.4,872,184,477,141
+GO:0030449,Process,regulation of complement activation,Complement Cascade,3.85E-10,1.25E-07,-6.903089987,3.55,872,23,224,21
+GO:2000257,Process,regulation of protein activation cascade,Blood Clotting,3.85E-10,1.19E-07,-6.924453039,3.55,872,23,224,21
+GO:0002252,Process,immune effector process,Immune Function,4.39E-10,1.30E-07,-6.886056648,1.41,872,198,447,143
+GO:0045055,Process,regulated exocytosis,Inter-cellular Transport,6.12E-10,1.73E-07,-6.761953897,1.4,872,182,477,139
+GO:0060627,Process,regulation of vesicle-mediated transport,Inter-cellular Transport,7.99E-10,2.17E-07,-6.663540266,1.66,872,64,483,59
+GO:0006959,Process,humoral immune response,Immune Function,1.53E-09,4.00E-07,-6.397940009,2.81,872,43,224,31
+GO:1900047,Process,negative regulation of hemostasis,Blood Clotting,1.54E-09,3.87E-07,-6.412289035,4.31,872,19,181,17
+GO:0030195,Process,negative regulation of blood coagulation,Blood Clotting,1.54E-09,3.73E-07,-6.428291168,4.31,872,19,181,17
+GO:0050819,Process,negative regulation of coagulation,Blood Clotting,1.54E-09,3.61E-07,-6.442492798,4.31,872,19,181,17
+GO:0002673,Process,regulation of acute inflammatory response,Immune Function,3.42E-09,7.74E-07,-6.111259039,3.29,872,26,224,22
+GO:0006952,Process,defense response,Immune Function,4.71E-09,1.03E-06,-5.987162775,1.74,872,112,332,74
+GO:0050878,Process,regulation of body fluid levels,Homeostasis,5.46E-09,1.16E-06,-5.935542011,3.22,872,52,146,28
+GO:0050727,Process,regulation of inflammatory response,Immune Function,1.06E-08,2.18E-06,-5.661543506,2.43,872,61,224,38
+GO:0042730,Process,fibrinolysis,Blood Clotting,1.77E-08,3.53E-06,-5.452225295,5.04,872,12,173,12
+GO:0006956,Process,complement activation,Complement Cascade,3.37E-08,6.53E-06,-5.185086819,3.19,872,21,247,19
+GO:0061045,Process,negative regulation of wound healing,Wound Healing,4.30E-08,8.11E-06,-5.090979146,2.38,872,22,366,22
+GO:1903035,Process,negative regulation of response to wounding,Wound Healing,4.30E-08,7.89E-06,-5.102922997,2.38,872,22,366,22
+GO:0051241,Process,negative regulation of multicellular organismal process,Multicellular Organismal Process,4.78E-08,8.54E-06,-5.068542129,1.81,872,90,322,60
+GO:0001775,Process,cell activation,Cell Activation,5.85E-08,1.02E-05,-4.991399828,1.38,872,187,447,132
+GO:0040011,Process,locomotion,Cell Motility,1.02E-07,1.73E-05,-4.761953897,1.68,872,82,392,62
+GO:0006023,Process,aminoglycan biosynthetic process,Biosynthetic Process,1.12E-07,1.85E-05,-4.732828272,54.5,872,4,16,4
+GO:0006024,Process,glycosaminoglycan biosynthetic process,Biosynthetic Process,1.12E-07,1.81E-05,-4.742321425,54.5,872,4,16,4
+GO:0002697,Process,regulation of immune effector process,Immune Function,1.25E-07,1.97E-05,-4.705533774,2.41,872,55,224,34
+GO:0006955,Process,immune response,Immune Function,1.84E-07,2.84E-05,-4.54668166,2.01,872,97,224,50
+GO:0006958,Process,"complement activation, classical pathway",Complement Cascade,2.22E-07,3.35E-05,-4.474955193,3.46,872,18,224,16
+GO:0030162,Process,regulation of proteolysis,Metabolic Process,2.36E-07,3.48E-05,-4.458420756,1.77,872,108,288,63
+GO:0009617,Process,response to bacterium,Response to Bacteria,3.29E-07,4.76E-05,-4.322393047,2.69,872,39,216,26
+GO:0018149,Process,peptide cross-linking,Metabolic Process,3.61E-07,5.10E-05,-4.292429824,10.77,872,12,54,8
+GO:0032879,Process,regulation of localization,Cell Localization,3.71E-07,5.14E-05,-4.289036881,1.3,872,217,483,156
+GO:0051049,Process,regulation of transport,Inter-cellular Transport,5.18E-07,7.03E-05,-4.153044675,1.39,872,135,483,104
+GO:0050866,Process,negative regulation of cell activation,Immune Function,5.46E-07,7.28E-05,-4.137868621,2.38,872,19,366,19
+GO:0012501,Process,programmed cell death,Cell Death,6.81E-07,8.89E-05,-4.051098239,3.58,872,71,72,21
+GO:0008219,Process,cell death,Cell Death,6.81E-07,8.72E-05,-4.059483515,3.58,872,71,72,21
+GO:1903510,Process,mucopolysaccharide metabolic process,Metabolic Process,6.91E-07,8.69E-05,-4.060980224,24.22,872,6,30,5
+GO:0042742,Process,defense response to bacterium,Response to Bacteria,0.000000898,0.000111,-3.954677021,2.88,872,32,208,22
+GO:0006026,Process,aminoglycan catabolic process,Metabolic Process,0.000000993,0.00012,-3.920818754,43.6,872,5,16,4
+GO:0006027,Process,glycosaminoglycan catabolic process,Metabolic Process,0.000000993,0.000118,-3.928117993,43.6,872,5,16,4
+GO:0044273,Process,sulfur compound catabolic process,Metabolic Process,0.000000993,0.000116,-3.935542011,43.6,872,5,16,4
+GO:0002274,Process,myeloid leukocyte activation,Immune Function,0.00000107,0.000123,-3.910094889,1.38,872,158,447,112
+GO:1903530,Process,regulation of secretion by cell,Inter-cellular Transport,0.00000132,0.000149,-3.826813732,1.65,872,46,483,42
+GO:0048870,Process,cell motility,Cell Motility,0.00000136,0.000151,-3.821023053,1.66,872,75,392,56
+GO:0032102,Process,negative regulation of response to external stimulus,Response to Stimulus,0.00000177,0.000194,-3.71219827,1.97,872,40,366,33
+GO:1900048,Process,positive regulation of hemostasis,Blood Clotting,0.00000201,0.000217,-3.663540266,5.04,872,9,173,9
+GO:0030194,Process,positive regulation of blood coagulation,Blood Clotting,0.00000201,0.000214,-3.669586227,5.04,872,9,173,9
+GO:0050820,Process,positive regulation of coagulation,Blood Clotting,0.00000201,0.00021,-3.677780705,5.04,872,9,173,9
+GO:0045087,Process,innate immune response,Immune Function,0.00000212,0.000218,-3.661543506,1.77,872,74,332,50
+GO:0032970,Process,regulation of actin filament-based process,Intracellular Process,0.00000215,0.000218,-3.661543506,1.6,872,45,510,42
+GO:0051270,Process,regulation of cellular component movement,Intracellular Process,0.00000216,0.000215,-3.66756154,1.48,872,82,489,68
+GO:0017157,Process,regulation of exocytosis,Inter-cellular Transport,0.00000223,0.00022,-3.657577319,1.81,872,26,483,26
+GO:0016477,Process,cell migration,Cell Motility,0.00000238,0.000231,-3.63638802,1.68,872,69,392,52
+GO:2000145,Process,regulation of cell motility,Cell Motility,0.00000249,0.000238,-3.623423043,1.5,872,75,489,63
+GO:0050865,Process,regulation of cell activation,Immune Function,0.00000257,0.000242,-3.616184634,1.73,872,57,397,45
+GO:0030203,Process,glycosaminoglycan metabolic process,Metabolic Process,0.00000266,0.000248,-3.605548319,20.76,872,7,30,5
+GO:0006022,Process,aminoglycan metabolic process,Metabolic Process,0.00000266,0.000244,-3.612610174,20.76,872,7,30,5
+GO:0042119,Process,neutrophil activation,Immune Function,0.00000298,0.00027,-3.568636236,1.38,872,153,447,108
+GO:0002275,Process,myeloid cell activation involved in immune response,Immune Function,0.00000352,0.000314,-3.503070352,1.37,872,155,447,109
+GO:0006897,Process,endocytosis,Inter-cellular Transport,0.00000391,0.000344,-3.463441557,1.65,872,46,471,41
+GO:0090303,Process,positive regulation of wound healing,Wound Healing,0.00000438,0.000381,-3.419075024,4.58,872,11,173,10
+GO:0002283,Process,neutrophil activation involved in immune response,Immune Function,0.00000439,0.000377,-3.42365865,1.37,872,152,447,107
+GO:0043299,Process,leukocyte degranulation,Immune Function,0.00000439,0.000372,-3.42945706,1.37,872,152,447,107
+GO:0007155,Process,cell adhesion,Cell Adhesion,0.0000044,0.000369,-3.432973634,1.54,872,65,480,55
+GO:0009888,Process,tissue development,Developmental Process,0.00000516,0.000427,-3.369572125,5.81,872,25,66,11
+GO:0036230,Process,granulocyte activation,Immune Function,0.00000526,0.000431,-3.36552273,1.37,872,154,447,108
+GO:0002366,Process,leukocyte activation involved in immune response,Immune Function,0.00000579,0.000468,-3.329754147,1.36,872,161,447,112
+GO:0002263,Process,cell activation involved in immune response,Immune Function,0.00000579,0.000463,-3.334419009,1.36,872,161,447,112
+GO:2000147,Process,positive regulation of cell motility,Cell Motility,0.00000581,0.000459,-3.338187314,1.6,872,48,489,43
+GO:0030334,Process,regulation of cell migration,Cell Motility,0.00000583,0.000455,-3.341988603,1.49,872,73,489,61
+GO:0051046,Process,regulation of secretion,Inter-cellular Transport,0.00000595,0.000459,-3.338187314,1.61,872,47,483,42
+GO:0043312,Process,neutrophil degranulation,Immune Function,0.00000672,0.000512,-3.290730039,1.37,872,151,447,106
+GO:0002682,Process,regulation of immune system process,Immune Function,0.00000692,0.000523,-3.281498311,1.47,872,169,322,92
+GO:0045321,Process,leukocyte activation,Immune Function,0.00000697,0.00052,-3.283996656,1.34,872,175,447,120
+GO:0051094,Process,positive regulation of developmental process,Developmental Process,0.00000733,0.000541,-3.266802735,1.43,872,90,494,73
+GO:0006928,Process,movement of cell or subcellular component,Cell Motility,0.00000844,0.000616,-3.210419288,1.53,872,102,392,70
+GO:0002576,Process,platelet degranulation,Blood Clotting,0.00000872,0.00063,-3.200659451,3.09,872,35,153,19
+GO:0110053,Process,regulation of actin filament organization,Cellular Component Organization,0.00000931,0.000666,-3.176525771,1.66,872,32,510,31
+GO:0030335,Process,positive regulation of cell migration,Cell Motility,0.00000948,0.000671,-3.17327748,1.59,872,47,489,42
+GO:0051917,Process,regulation of fibrinolysis,Blood Clotting,0.0000111,0.000776,-3.110138279,5.04,872,8,173,8
+GO:0008544,Process,epidermis development,Skin Development,0.0000112,0.000775,-3.110698297,4.19,872,9,208,9
+GO:0098657,Process,import into cell,Inter-cellular Transport,0.0000118,0.000807,-3.093126465,1.6,872,51,471,44
+GO:0022610,Process,biological adhesion,Cell Adhesion,0.0000123,0.000838,-3.076755981,1.51,872,66,480,55
+GO:0051918,Process,negative regulation of fibrinolysis,Blood Clotting,0.0000141,0.000949,-3.022733788,5.97,872,7,146,7
+GO:0019835,Process,cytolysis,Intracellular Process,0.0000145,0.000968,-3.014124643,4.84,872,8,180,8
+GO:0030832,Process,regulation of actin filament length,Intracellular Process,0.0000154,0.00102,-2.991399828,1.17,872,250,510,25
+GO:0008064,Process,regulation of actin polymerization or depolymerization,Intracellular Process,0.0000154,0.00101,-2.995678626,1.17,872,250,510,25
+GO:0045103,Process,intermediate filament-based process,Intracellular Process,0.0000154,0.000997,-3.001304842,5.13,872,11,139,9
+GO:0005201,Function,extracellular matrix structural constituent,Extracellular Matrix Structure,6.87E-11,0.000000103,-6.987162775,3.15,872,22,277,22
+GO:0005509,Function,calcium ion binding,Ion Binding,4.02E-10,0.000000301,-6.521433504,1.56,872,54,560,54
+GO:0030021,Function,extracellular matrix structural constituent conferring compression resistance,Extracellular Matrix Structure,0.000000112,0.0000558,-4.253365801,54.5,872,4,16,4
+GO:0005539,Function,glycosaminoglycan binding,Carbohydrate Derivate Binding,0.000000173,0.0000649,-4.187755303,2.55,872,26,302,23
+GO:0043169,Function,cation binding,Ion Binding,0.000000519,0.000155,-3.809668302,1.24,872,200,575,164
+GO:0046872,Function,metal ion binding,Ion Binding,0.00000113,0.000283,-3.548213564,1.25,872,190,575,156
+GO:0005198,Function,structural molecule activity,Structural Molecule Activity,0.0000015,0.000322,-3.492144128,3.06,872,114,60,24
+GO:0008201,Function,heparin binding,Heparin Binding,0.00000198,0.000371,-3.43062609,2.42,872,20,342,19
+GO:1901681,Function,sulfur compound binding,Sulfur Compound Binding,0.00000205,0.000341,-3.467245621,2.44,872,26,302,22
+GO:0004867,Function,serine-type endopeptidase inhibitor activity,Enzyme Regulator Activity,0.00000254,0.000381,-3.419075024,2.29,872,21,362,20
+GO:0005615,Component,extracellular space,Extracellular Matrix or Space,2.01E-23,1.97E-20,-19.70553377,1.93,872,165,336,123
+GO:0031012,Component,extracellular matrix,Extracellular Matrix or Space,8.51E-21,4.17E-18,-17.37986395,2.52,872,82,287,68
+GO:0062023,Component,collagen-containing extracellular matrix,Collagen,7.37E-20,2.41E-17,-16.61798296,2.51,872,80,287,66
+GO:0005576,Component,extracellular region,Extracellular Matrix or Space,1.33E-19,3.26E-17,-16.4867824,1.99,872,219,226,113
+GO:0072562,Component,blood microparticle,Blood or Clot,6.44E-14,1.26E-11,-10.89962945,3,872,57,209,41
+GO:0044433,Component,cytoplasmic vesicle part,Intracellular Organelle Component ,1.92E-13,3.14E-11,-10.50307035,1.42,872,213,477,165
+GO:0098588,Component,bounding membrane of organelle,Membrane,2E-13,2.8E-11,-10.55284197,1.53,872,114,516,103
+GO:0012506,Component,vesicle membrane,Membrane,4.3E-11,5.27E-09,-8.278189385,1.79,872,62,449,57
+GO:0030659,Component,cytoplasmic vesicle membrane,Membrane,8.15E-11,8.87E-09,-8.05207638,1.78,872,61,449,56
+GO:0044421,Component,extracellular region part,Extracellular Matrix or Space,9.62E-11,9.43E-09,-8.025488307,1.36,872,503,204,160
+GO:0098805,Component,whole membrane,Membrane,1.11E-10,9.92E-09,-8.003488328,1.52,872,97,516,87
+GO:0005882,Component,intermediate filament,Cytoskeleton,2.86E-10,2.34E-08,-7.630784143,8.04,872,23,66,14
+GO:0044425,Component,membrane part,Membrane,9.24E-10,6.97E-08,-7.156767222,1.32,872,216,513,168
+GO:0001533,Component,cornified envelope,Skin Specific ,8.85E-09,0.000000619,-6.208309351,8.26,872,11,96,10
+GO:0031982,Component,vesicle,Intracellular Organelle Component ,9.11E-09,0.000000595,-6.225483034,1.33,872,498,204,155
+GO:0044459,Component,plasma membrane part,Membrane,1.01E-08,0.000000616,-6.210419288,1.51,872,121,443,93
+GO:0030667,Component,secretory granule membrane,Membrane,1.42E-08,0.000000818,-6.087246696,1.68,872,44,506,43
+GO:0044431,Component,Golgi apparatus part,Intracellular Organelle Component ,1.86E-08,0.00000101,-5.995678626,1.75,872,44,476,42
+GO:0005886,Component,plasma membrane,Membrane,8.81E-08,0.00000455,-5.341988603,1.36,872,219,426,145
+GO:0097708,Component,intracellular vesicle,Intracellular Organelle Component ,0.000000104,0.00000508,-5.294136288,1.37,872,129,527,107
+GO:0031410,Component,cytoplasmic vesicle,Intracellular Organelle Component ,0.000000157,0.00000734,-5.13430394,1.37,872,128,527,106
+GO:0005788,Component,endoplasmic reticulum lumen,Intracellular Organelle Component ,0.00000016,0.00000714,-5.146301788,3.71,872,37,127,20
+GO:0005796,Component,Golgi lumen,Intracellular Organelle Component ,0.000000267,0.0000114,-4.943095149,7.72,872,8,113,8
+GO:0044432,Component,endoplasmic reticulum part,Intracellular Organelle Component ,0.000000291,0.0000119,-4.924453039,1.51,872,71,513,63
+GO:0031090,Component,organelle membrane,Membrane,0.00000037,0.0000145,-4.838631998,1.31,872,159,534,128
+GO:0031224,Component,intrinsic component of membrane,Membrane,0.000000604,0.0000227,-4.643974143,1.62,872,66,449,55
+GO:0043230,Component,extracellular organelle,Extracellular Matrix or Space,0.000000818,0.0000297,-4.527243551,1.39,872,460,147,108
+GO:1903561,Component,extracellular vesicle,Extracellular Matrix or Space,0.000000818,0.0000286,-4.543633967,1.39,872,460,147,108
+GO:0070062,Component,extracellular exosome,Extracellular Matrix or Space,0.000000818,0.0000277,-4.557520231,1.39,872,460,147,108
+GO:0045095,Component,keratin filament,Skin Specific ,0.00000187,0.0000612,-4.213248578,8.81,872,12,66,8
+GO:0016021,Component,integral component of membrane,Membrane,0.00000569,0.00018,-3.744727495,1.63,872,55,447,46
+GO:0044437,Component,vacuolar part,Intracellular Organelle Component ,0.00000786,0.000241,-3.617982957,1.56,872,81,413,60
+GO:0031093,Component,platelet alpha granule lumen,Platelet,0.0000102,0.000304,-3.517126416,3.56,872,24,153,15
+GO:0005768,Component,endosome,Intracellular Organelle Component ,0.0000138,0.000399,-3.399027104,1.6,872,48,476,42
+GO:0098852,Component,lytic vacuole membrane,Membrane,0.0000167,0.000467,-3.330683119,1.82,872,36,413,31
+GO:0005765,Component,lysosomal membrane,Membrane,0.0000167,0.000454,-3.342944147,1.82,872,36,413,31
+GO:0000139,Component,Golgi membrane,Membrane,0.0000203,0.000538,-3.269217724,1.76,872,27,476,26
+GO:0034366,Component,spherical high-density lipoprotein particle,Extracellular Lipoprotein,0.0000258,0.000665,-3.177178355,9.8,872,5,89,5
+GO:0005774,Component,vacuolar membrane,Membrane,0.0000321,0.000806,-3.093664958,1.78,872,38,413,32
