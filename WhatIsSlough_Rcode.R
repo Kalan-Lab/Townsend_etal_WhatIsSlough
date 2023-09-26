@@ -355,6 +355,155 @@ adonis2(PCAcord_adonis ~ Outcome, data = sampledf, method = "eu", permutations =
 adonis2(PCAcord_adonis ~ Subject, data = sampledf, method = "eu", permutations = 9999 )
 adonis2(PCAcord_adonis ~ EdgeCenter, data = sampledf, method = "eu", permutations = 9999 )
 
+ps.wisc <- qza_to_phyloseq(
+  features="QZA-Wisc-table.qza",
+  taxonomy="QZA-Wisc-taxonomy.qza",
+  metadata = "QZA-Wisc-metadata.txt",
+  tree = "QZA-Wisc-rooted_tree.qza")
+ps.decont <- ps.wisc
+ps.decont <- prune_samples(sample_sums(ps.decont) > 1000, ps.decont)
+ps.decont <- subset_taxa(ps.decont, is.na(Phylum) == F)
+ps.decont <- subset_taxa(ps.decont, Family != 'mitochondria')
+tax_table(ps.decont)["829ee0e126800d181ab4a09065174a4d", "Genus"] <- "Klebsiella/Enterobacter" # manually blasted and renamed abundant but "unclassified" ASVs at the genus level
+tax_table(ps.decont)["5bfb87b61ec26b3347297c36d287f034", "Genus"] <- "Escherichia"
+tax_table(ps.decont)["dd4f1e0c4ea9768f0d6371bdb5eb9ab7", "Genus"] <- "Escherichia"
+tax_table(ps.decont)["430c3059353af8d4cf475ae776c5fb31", "Genus"] <- "Klebsiella/Enterobacter"
+tax_table(ps.decont)["a8fead32776fba662549a2e627961359", "Genus"] <- "Klebsiella/Enterobacter"
+tax_table(ps.decont)["93f7cd0fcb9c489339bcd538865d2b68", "Genus"] <- "Klebsiella/Enterobacter"
+tax_table(ps.decont)["1557d8aa883f653f076f0c185bd523a8", "Genus"] <- "Alcaligenes"
+tax_table(ps.decont)["01acdfc6b905737920c30d90f0db7852", "Genus"] <- "Alcaligenes"
+sample_data(ps.decont)$Patient_ID <- as.character(sample_data(ps.decont)$Patient_ID)
+ps.decont <- merge_samples(ps.decont, "Patient_ID")
+ps.comp <- transform_sample_counts(ps.decont, function(x) x / sum(x))
+df.ps = psmelt(ps.comp)
+df.ps.long <- pivot_longer(df.ps, c(Kingdom:Species), names_to = 'level', values_to = 'taxon') %>%
+  mutate(Patient_ID = fct_relevel(as.character(Patient_ID),
+                                  "4", "6", "9",
+                                  "8", "5", "3", "7",
+                                  "10", "1", "2"))
+tax_Gen_Fam_Phylum <- df.ps %>%
+  select(Genus, Family, Phylum) %>%
+  unique()
+tax_Gen_Fam_Phylum[nrow(tax_Gen_Fam_Phylum)+1,] <- c("Other (<1%)", "Other (<1%)", "Other (<1%)")
+tax_Gen_Fam_Phylum[nrow(tax_Gen_Fam_Phylum)+1,] <- c("Unclassified", "Other (<1%)", "Other (<1%)")
+taxon_rel_abund <- df.ps.long %>%
+  replace_na(list(taxon = "Unclassified", level = "Unclassified", Abundance = 0)) %>%
+  filter(level=="Genus") %>%
+  #filter(Patient_ID == 1) %>%
+  group_by(Patient_ID, taxon) %>%
+  summarize(rel_abund = sum(Abundance), .groups="drop") %>%
+  group_by(Patient_ID, taxon) %>%
+  summarize(mean_rel_abund = mean(rel_abund)*100, .groups="drop")
+taxon_pool <- taxon_rel_abund %>%
+  group_by(taxon) %>%
+  summarize(pool = max(mean_rel_abund) < 5,
+            mean = mean(mean_rel_abund),
+            .groups="drop")
+phylum_color2 = c("#C8443F","#175169","#8AB17D", "#EFB366")
+pWisc<-
+  inner_join(taxon_rel_abund, taxon_pool, by="taxon") %>%
+  mutate(taxon = if_else(pool, "Other", taxon)) %>%
+  group_by(Patient_ID, taxon) %>%
+  summarize(mean_rel_abund = mean(mean_rel_abund),
+            mean = min(mean),
+            .groups="drop") %>%
+  inner_join(., tax_Gen_Fam_Phylum, by=c('taxon'='Genus')) %>%
+  mutate(taxon = factor(taxon),
+         taxon = fct_reorder(taxon, mean, .desc=F),
+         Phylum = fct_relevel(Phylum, "Proteobacteria", "Actinobacteria", "Firmicutes", "Bacteroidetes", "None")) %>%
+  ggplot(aes(x=Patient_ID, y=taxon, size=mean_rel_abund, #alpha=mean_rel_abund,
+             fill=Phylum)) +
+  geom_point(shape=21, color="black") +
+  scale_size(range=c(-1,10), breaks=c(0,1,10,20,40,60,80,100), name="Relative\nabundance (%)") +
+  #scale_size_area(max_size = 10, n.breaks=6, name="Relative\nabundance (%)") +
+  scale_alpha(n.breaks=6, name="Relative\nabundance (%)", range = c(0.3,1)) +
+  theme_bw(base_size=10) +
+  scale_fill_manual(values = phylum_color2,
+                    labels=c("Proteobacteria"="Pseudomonadota",
+                             "Firmicutes"="Bacillota",
+                             "Actinobacteria"="Actinomycetota",
+                             "Bacteroidetes"="Bacteroidota")) +
+  labs(x="Wisconsin Patient ID",
+       y="Bacterial Genera") +
+  guides(fill = guide_legend(override.aes = list(size = 7), order=1)) +
+  theme(axis.text.y = element_text(face = "italic"))
+pWisc # Pannel A 
+
+ps.AUS<-qza_to_phyloseq( 
+  features="./AUS-table2.qza",
+  taxonomy="./AUS-taxonomy.qza",
+  metadata = "./AUS-sample_metadata.txt",
+  tree = "./AUs-rooted-tree.qza") # 16S samples from australian cohort
+ps.decont <- subset_samples(ps.AUS,sample == "Patient")
+ps.decont <- subset_taxa(ps.decont, is.na(Phylum) == F)
+ps.decont <- subset_taxa(ps.decont, Family != 'mitochondria')
+t <- as.data.frame(tax_table(ps.decont))
+t_no_Genus <- t %>% filter(is.na(Genus) == T)
+t_Family_as_Genus <- t %>%
+  mutate(Genus = ifelse(is.na(Genus)==T, Family, Genus)) %>%
+  mutate(Genus = ifelse(Genus == "1-68", "1-68 [Tissierellaceae]", Genus)) %>%
+  mutate(Genus = ifelse(Genus == "ph2", "ph2 [Tissierellaceae]", Genus))
+t_Family_as_Genus <- tax_table(as.matrix(t_Family_as_Genus))
+tax_table(ps.decont) <- t_Family_as_Genus
+sample_data(ps.decont)$subject <- as.character(sample_data(ps.decont)$subject)
+
+ps.comp <- transform_sample_counts(ps.decont, function(x) x / sum(x))
+df.ps = psmelt(ps.comp)
+df.ps <- as.data.frame(df.ps)
+df.ps.long <- pivot_longer(df.ps, c(Kingdom:Species), names_to = 'level', values_to = 'taxon') %>%
+    mutate(subject = fct_relevel(as.character(subject),
+                               "13", "15", "1", "2",
+                               "18", "6", "11", "4", "14",
+                               "16", "3", "7", "17",
+                               "12", "5", "10"))
+tax_Gen_Fam_Phylum <- df.ps %>% dplyr::select(Genus, Family, Phylum) %>% unique()
+tax_Gen_Fam_Phylum[nrow(tax_Gen_Fam_Phylum)+1,] <- c("Other (<1%)", "Other (<1%)", "Other (<1%)")
+tax_Gen_Fam_Phylum[nrow(tax_Gen_Fam_Phylum)+1,] <- c("Unclassified", "Other (<1%)", "Other (<1%)")
+
+taxon_rel_abund <- df.ps.long %>%
+  replace_na(list(taxon = "Unclassified", level = "Unclassified", Abundance = 0)) %>%
+  filter(level=="Genus") %>%
+  group_by(subject, taxon) %>%
+  summarize(rel_abund = sum(Abundance), .groups="drop") %>%
+  group_by(subject, taxon) %>%
+  summarize(mean_rel_abund = mean(rel_abund)*100, .groups="drop")
+taxon_pool <- taxon_rel_abund %>%
+  group_by(taxon) %>%
+  summarize(pool = max(mean_rel_abund) < 5,
+            mean = mean(mean_rel_abund),
+            .groups="drop")
+
+phylum_color2 = c("#C8443F","#175169","#8AB17D", "#EFB366")
+pAus<-
+  inner_join(taxon_rel_abund, taxon_pool, by="taxon") %>%
+  mutate(taxon = if_else(pool, "Other", taxon)) %>%
+  group_by(subject, taxon) %>%
+  summarize(mean_rel_abund = mean(mean_rel_abund),
+            mean = min(mean),
+            .groups="drop") %>%
+  inner_join(., tax_Gen_Fam_Phylum, by=c('taxon'='Genus')) %>%
+  mutate(taxon = factor(taxon),
+         taxon = fct_reorder(taxon, mean, .desc=F),) %>%
+  ggplot(aes(x=subject, y=taxon, size=mean_rel_abund, #alpha=mean_rel_abund,
+             fill=Phylum)) +
+  geom_point(shape=21,color="black") +
+  scale_size(range=c(-1,10), breaks=c(0,1,10,20,40,60,80,100)) +
+  theme_bw(base_size=10) +
+  scale_fill_manual(values = phylum_color2,
+                    labels=c("Proteobacteria"="Pseudomonadota",
+                             "Firmicutes"="Bacillota",
+                             "Actinobacteria"="Actinomycetota",
+                             "Bacteroidetes"="Bacteroidota"),
+                    limits=c("Proteobacteria",
+                             "Actinobacteria",
+                             "Firmicutes")) +
+  labs(x="Australia Subject ID",
+       y="Bacterial Genera") +
+  guides(fill = guide_legend(override.aes = list(size = 7)))+
+  theme(axis.text.y = element_text(face = "italic"),
+        axis.text = element_text(color="black"),
+        legend.position = "none")
+pAus # Pannel B 
 
 # Figure 4
 # PREPING Datasets for DIABLO 
