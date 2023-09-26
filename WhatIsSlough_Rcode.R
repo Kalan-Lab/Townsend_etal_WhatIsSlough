@@ -25,6 +25,7 @@ library(circlize)
 library(factoextra) # for k-means cluistering 
 library(cluster) # for kmeans clustering
 library(reshape2)
+library(speedyseq)
 
 # working directory
 setwd(dir = "/Townsend_etal_WhatIsSlough/WTB_Files_for_Rcode")
