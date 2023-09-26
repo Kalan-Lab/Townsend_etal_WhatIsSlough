@@ -27,7 +27,7 @@ library(cluster) # for kmeans clustering
 library(reshape2)
 
 # working directory
-setwd(dir = "/Users/liztown/Documents/KalanLab/Papers/WTB/WTB_Rcode")
+setwd(dir = "/Townsend_etal_WhatIsSlough/WTB_Files_for_Rcode")
 
 # FIGURE 1 
 ### DEfining the top enriched proteins in Slough 
