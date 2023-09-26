@@ -1,0 +1,27 @@
+sample-id	forward-absolute-filepath	reverse-absolute-filepath	Sequencing_sample_ID	PF_clusters	Mean_quality_score	Sample_name	Sample_Type	Wound_location	Patient_ID	fastqspeciesscreen-pct-human	fastqspeciesscreen-pct-mouse	fastqspeciesscreen-pct-rRNA
+H2O_1	/Users/cheong5/RawData/Slough_WTB/H2O_1_S95_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/H2O_1_S95_R2_001.fastq.gz	S95	832	28.65	SeqNeg_1	SeqNeg			0	5.05	88.94
+H2O_2	/Users/cheong5/RawData/Slough_WTB/H2O_2_S96_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/H2O_2_S96_R2_001.fastq.gz	S96	612	27.78	SeqNeg_2	SeqNeg			0	4.9	84.97
+H2O_3	/Users/cheong5/RawData/Slough_WTB/H2O_3_S107_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/H2O_3_S107_R2_001.fastq.gz	S107	123	26.75	SeqNeg_3	SeqNeg			0	3.25	68.29
+H2O_4	/Users/cheong5/RawData/Slough_WTB/H2O_4_S108_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/H2O_4_S108_R2_001.fastq.gz	S108	147	26.07	SeqNeg_4	SeqNeg			0.68	4.08	70.75
+H2O_5	/Users/cheong5/RawData/Slough_WTB/H2O_5_S276_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/H2O_5_S276_R2_001.fastq.gz	S276	248	26.21	SeqNeg_5	SeqNeg			0.4	2.42	57.26
+H2O_6	/Users/cheong5/RawData/Slough_WTB/H2O_6_S288_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/H2O_6_S288_R2_001.fastq.gz	S288	282	26.67	SeqNeg_6	SeqNeg			0	5.67	62.77
+LK16S004_353	/Users/cheong5/RawData/Slough_WTB/LK16S004_353_S359_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_353_S359_R2_001.fastq.gz	S359	123	29.32	ExtrNeg_0905	ExtrNeg			0	5.69	89.43
+LK16S004_354	/Users/cheong5/RawData/Slough_WTB/LK16S004_354_S360_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_354_S360_R2_001.fastq.gz	S360	74913	33.88	WTB-001E	PatientSample	Edge	1	0.05	0	99.85
+LK16S004_355	/Users/cheong5/RawData/Slough_WTB/LK16S004_355_S361_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_355_S361_R2_001.fastq.gz	S361	96036	33.72	WTB-002E	PatientSample	Edge	2	2.67	0.04	96.53
+LK16S004_356	/Users/cheong5/RawData/Slough_WTB/LK16S004_356_S362_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_356_S362_R2_001.fastq.gz	S362	65750	32.68	WTB-002C	PatientSample	Center	2	13.82	0.04	83.92
+LK16S004_357	/Users/cheong5/RawData/Slough_WTB/LK16S004_357_S363_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_357_S363_R2_001.fastq.gz	S363	81855	34.21	WTB-003E	PatientSample	Edge	3	0.35	0.01	99.49
+LK16S004_358	/Users/cheong5/RawData/Slough_WTB/LK16S004_358_S364_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_358_S364_R2_001.fastq.gz	S364	48965	33.93	WTB-003C	PatientSample	Center	3	1.49	0.02	98.09
+LK16S004_359	/Users/cheong5/RawData/Slough_WTB/LK16S004_359_S365_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_359_S365_R2_001.fastq.gz	S365	96180	33.44	WTB-004E	PatientSample	Edge	4	4.91	0	93.76
+LK16S004_360	/Users/cheong5/RawData/Slough_WTB/LK16S004_360_S366_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_360_S366_R2_001.fastq.gz	S366	72724	33.78	WTB-004C	PatientSample	Center	4	2.97	0.02	96.07
+LK16S004_361	/Users/cheong5/RawData/Slough_WTB/LK16S004_361_S367_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_361_S367_R2_001.fastq.gz	S367	334	30.43	WTB-005E	PatientSample	Edge	5	78.14	0	17.66
+LK16S004_362	/Users/cheong5/RawData/Slough_WTB/LK16S004_362_S368_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_362_S368_R2_001.fastq.gz	S368	32092	31.28	WTB-005C	PatientSample	Center	5	90.06	0.03	7.21
+LK16S004_363	/Users/cheong5/RawData/Slough_WTB/LK16S004_363_S369_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_363_S369_R2_001.fastq.gz	S369	64203	34.27	WTB-006E	PatientSample	Edge	6	7.18	0.05	92.29
+LK16S004_364	/Users/cheong5/RawData/Slough_WTB/LK16S004_364_S370_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_364_S370_R2_001.fastq.gz	S370	44736	32.37	WTB-006C	PatientSample	Center	6	27.45	0.03	70.04
+LK16S004_365	/Users/cheong5/RawData/Slough_WTB/LK16S004_365_S371_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_365_S371_R2_001.fastq.gz	S371	86433	33.72	WTB-007E	PatientSample	Edge	7	2.2	0	97.07
+LK16S004_366	/Users/cheong5/RawData/Slough_WTB/LK16S004_366_S372_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_366_S372_R2_001.fastq.gz	S372	12479	33.87	WTB-007C	PatientSample	Center	7	1.72	0.08	97.52
+LK16S004_367	/Users/cheong5/RawData/Slough_WTB/LK16S004_367_S373_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_367_S373_R2_001.fastq.gz	S373	108306	33.5	WTB-008E	PatientSample	Edge	8	0.75	0.01	98.73
+LK16S004_368	/Users/cheong5/RawData/Slough_WTB/LK16S004_368_S374_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_368_S374_R2_001.fastq.gz	S374	166	27.53	WTB-008C	PatientSample	Center	8	0.6	4.82	92.17
+LK16S004_369	/Users/cheong5/RawData/Slough_WTB/LK16S004_369_S375_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_369_S375_R2_001.fastq.gz	S375	98413	33.48	WTB-009E	PatientSample	Edge	9	0.69	0	98.98
+LK16S004_370	/Users/cheong5/RawData/Slough_WTB/LK16S004_370_S376_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_370_S376_R2_001.fastq.gz	S376	105067	33.45	WTB-009C	PatientSample	Center	9	0.39	0.02	99.44
+LK16S004_371	/Users/cheong5/RawData/Slough_WTB/LK16S004_371_S377_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_371_S377_R2_001.fastq.gz	S377	92910	33.58	WTB-010E	PatientSample	Edge	10	0.27	0.03	99.52
+LK16S004_372	/Users/cheong5/RawData/Slough_WTB/LK16S004_372_S378_R1_001.fastq.gz	/Users/cheong5/RawData/Slough_WTB/LK16S004_372_S378_R2_001.fastq.gz	S378	86132	33.29	WTB-010C	PatientSample	Center	10	0.9	0.03	98.53
