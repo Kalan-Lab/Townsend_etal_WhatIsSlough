@@ -29,7 +29,7 @@ library(reshape2)
 library(speedyseq)
 
 # working directory
-setwd(dir = "/Users/liztown/Documents/KalanLab/Papers/WTB/WTB_Files_for_Rcode")
+setwd(dir = "/Townsend_etal_WhatIsSlough/WTB_Files_for_Rcode")
 
 # FIGURE 1 (PCoA scatterplots) and supplemental Figure 2 (corresponding Treemap plots)
 ### visualizing the most significantly  enriched proteins in Slough 
