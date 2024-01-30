@@ -1,4 +1,5 @@
 # What is Slough - R code for figures 
+# For the BioRxiv preprint version of the manuscript: https://www.biorxiv.org/content/10.1101/2023.11.02.565225v1
 
 # needed packages
 library(dplyr)
